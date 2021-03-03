@@ -1,0 +1,65 @@
+# File: Variables for Test environment
+variables:
+- name: azureSubscription
+  value: "AABNL AZ VDC47S"
+- name: SubscriptionId
+  value: "1ad4dfb4-a150-42d0-a5b8-feb1dd3d162a"
+- name: ResourceGroupName
+  value: "inv-ident-request-d-rg"
+- name: cinumber
+  value: CI0023799
+- name: metricsBasedRuleStatus
+  value: '-EnableRule'
+- name: PatActionGroupName
+  value: "iir-d-agn"
+
+# Dev Resources
+- #name: UIAppServiceName
+  #value: iir-d-ui
+- #name: RestAppServiceName
+  #value: iir-d-rest
+  ## UIAppService
+- #name: appServiceavgresponsealert
+  #value: 'iir-UI-AverageResponseTime'
+- #name: appServicehttp5xxalert
+  #value: 'iir-UI-HTTP5xx-Errors'
+- #name: appServicehttp4xxalert
+  #value: 'iir-UI-HTTP4xx-Errors'
+  ## RestAppService
+- #name: RestappServiceavgresponsealert
+  #value: 'iir-Rest-AverageResponseTime'
+- #name: RestappServicehttp5xxalert
+  #value: 'iir-Rest-HTTP5xx-Errors'
+- #name: RestappServicehttp4xxalert
+  #value: 'iir-Rest-HTTP4xx-Errors'
+  ## AppServicePlan
+- #name: appServicePlanAlert
+  #value: 'iir-AppService-CPUPercentMetric'
+- #name: AppServicePlanName
+  #value: 'iir-d-app-service-plan'
+  ## Postgresql
+- #name: cpuPercentMetricAlertDB
+  #value: 'iir-PostgreSql-CPUPercentMetric'
+- #name: failedConnectionsMetricAlertDB
+  #value: 'iir-PostgreSql-FailedConnectionsMetric'
+- #name: usedstoragePercentMetricAlertDB
+  #value: 'iir-PostgreSql-UsedStoragePercenMetric'
+- #name: PostgreSQLName
+  #value: iir-d-pgsql
+  ## Keyvault
+- name: availabilityMetricAlertKV
+  value: 'iir-Keyvault-AvailabilityMetric'
+- name: serviceApiLatecyMetricAlertKV
+  value: 'iir-Keyvault-ServiceAPILatency'
+- name: KeyVaultName
+  value: iirgwdkv
+  ## Application Gateway
+- #name: AppGatewayName
+  #value: 'iir-d-app-gateway'
+- #name: SumFailedRequestsAppGatewayAlert
+  #value: 'iir-SumFailedRequestsAppGateway'
+- #name: SumHTTP4xx5xxStatusAlert
+  #value: iir-SumHTTP4xx5xxStatus
+- #name: AvgApplGatewayTotalTimeAlert
+  #value: iir-AvgApplGatewayTotalTime
+
