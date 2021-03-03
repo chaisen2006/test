@@ -1,0 +1,37 @@
+parameters:
+  - name: azureSubscription
+    type: string
+  - name: ciNumber
+    type: string
+
+steps:
+  - task: AzurePowerShell@5
+    displayName: 'create alert on key vault - availibility'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      displayName: 'availabilityMetricAlertKV'
+      ScriptType: 'InlineScript'
+      Inline: |
+        $actionId=(Get-AzActionGroup -ResourceGroup "inv-ident-request-d-rg").Id
+        $patactionId=(Get-AzActionGroup -ResourceGroup $(ResourceGroupName) -Name $(PatActionGroupName)).Id
+        $NotifyActionGroup = @($actionId, $patactionId)
+        $triggerCondition = New-AzMetricAlertRuleV2Criteria -MetricName "Availability" -MetricNameSpace "Microsoft.KeyVault/vaults" -TimeAggregation Average -Operator LessThan -Threshold 100
+        Add-AzMetricAlertRuleV2 -Name $(availabilityMetricAlertKV) -ResourceGroupName $(ResourceGroupName) -WindowSize 0:5 -Frequency 0:5 -TargetResourceScope "/subscriptions/$(SubscriptionId)/resourceGroups/$(ResourceGroupName)/providers/Microsoft.KeyVault/vaults/$(KeyVaultName)" -TargetResourceType "Microsoft.KeyVault/vaults" -TargetResourceRegion "westeurope" -Description ${{ parameters.ciNumber }} -Severity 4 -ActionGroupId $NotifyActionGroup -Condition $triggerCondition
+      errorActionPreference: 'stop'
+      azurePowerShellVersion: 'LatestVersion'
+
+  - task: AzurePowerShell@5
+    displayName: 'create alert on key vault - api letancy'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      displayName: 'serviceApiLatecyMetricAlertKV'
+      ScriptType: 'InlineScript'
+      Inline: |
+        $actionId=(Get-AzActionGroup -ResourceGroup "inv-ident-request-d-rg").Id
+        $patactionId=(Get-AzActionGroup -ResourceGroup $(ResourceGroupName) -Name $(PatActionGroupName)).Id
+        $NotifyActionGroup = @($actionId, $patactionId)
+        $triggerCondition = New-AzMetricAlertRuleV2Criteria -MetricName "ServiceApiLatency" -MetricNameSpace "Microsoft.KeyVault/vaults" -TimeAggregation Average -Operator GreaterThan -Threshold 100
+        Add-AzMetricAlertRuleV2 -Name $(serviceApiLatecyMetricAlertKV) -ResourceGroupName $(ResourceGroupName) -WindowSize 0:5 -Frequency 0:5 -TargetResourceScope "/subscriptions/$(SubscriptionId)/resourceGroups/$(ResourceGroupName)/providers/Microsoft.KeyVault/vaults/$(KeyVaultName)" -TargetResourceType "Microsoft.KeyVault/vaults" -TargetResourceRegion "westeurope" -Description ${{ parameters.ciNumber }} -Severity 4 -ActionGroupId $NotifyActionGroup -Condition $triggerCondition
+      errorActionPreference: 'stop'
+      azurePowerShellVersion: 'LatestVersion'
+
