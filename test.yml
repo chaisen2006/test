@@ -1,0 +1,71 @@
+parameters:
+  - name: removeAlerts
+    default: false
+    type: boolean
+    values:
+      - true
+      - false
+
+# ---- Define a trigger if needed
+trigger:
+  branches:
+    include:
+      - master # For now master branch is triggered to run the pipeline
+
+
+
+stages:
+
+  - stage: 'Deploy_alerts_Dev'
+    variables:
+      - template: iir-monitor/alert-template/iir-d-variables.yml
+
+    jobs:
+        #- job: Create_AppService_Alerts
+        #  steps:
+        #    - template: iir-monitor/alert-template/create-alert-on-app-service.yml
+        #      parameters:
+        #        ciNumber: CI0023799
+        #        azureSubscription: inv-ident-request-d-rg
+        #- job: Create_Rest_AppService_Alerts
+        #  steps:
+        #    - template: iir-monitor/alert-template/create-alert-on-rest-app-service.yml
+        #      parameters:
+        #        ciNumber: CI0023799
+        #        azureSubscription: inv-ident-request-d-rg
+        #- job: Create_AppServicePlan_Alerts
+        #  steps:
+        #    - template: iir-monitor/alert-template/create-alert-on-appserviceplan.yml
+        #      parameters:
+        #        ciNumber: CI0023799
+        #        azureSubscription: inv-ident-request-d-rg
+        - job: Create_Keyvault_Alerts
+          steps:
+            - template: iir-monitor/alert-template/create-alert-on-keyvault.yml
+              parameters:
+                ciNumber: CI0023799
+                azureSubscription: inv-ident-request-d-rg
+         # - job: Create_Postgresql_Alerts
+         #  steps:
+         #   - template: iir-monitor/alert-template/create-alert-on-postgresql.yml
+         #     parameters:
+         #       ciNumber: CI0023799
+         #       azureSubscription: inv-ident-request-d-rg
+        #- job: Create_ApplicationGateway_Alerts
+        #  steps:
+        #    - template: iir-monitor/alert-template/create-alert-on-appgateway.yml
+        #      parameters:
+        #        ciNumber: CI0023799
+        #        azureSubscription: inv-ident-request-d-rg
+
+  - stage: 'Remove_alerts_Dev'
+    condition:  ${{ parameters.removeAlerts }}
+    variables:
+        - template: iir-monitor/alert-template/iir-d-variables.yml
+
+    jobs:
+          - job: RemoveAlertsDevResourceGroup
+            steps:
+              - template: iir-monitor/alert-template/remove-alert-resourcegroup.yml
+                parameters:
+                  azureSubscription: inv-ident-request-d-rg
