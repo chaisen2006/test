@@ -1,0 +1,11 @@
+  - stage: 'Remove_alerts_Dev'
+    condition:  ${{ parameters.removeAlerts }}
+    variables:
+        - template: iir-monitor/alert-template/iir-d-variables.yml
+
+    jobs:
+          - job: RemoveAlertsDevResourceGroup
+            steps:
+              - template: iir-monitor/alert-template/remove-alert-resourcegroup.yml
+                parameters:
+                  azureSubscription: inv-ident-request-d-rg
