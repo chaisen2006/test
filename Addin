@@ -1,0 +1,35 @@
+parameters:
+  - name: azureSubscription
+    type: string
+
+
+steps:
+  - task: AzurePowerShell@5
+    displayName: 'Remove alerts from resource group'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      displayName: 'RemoveAlertsFromResourceGroup'
+      ScriptType: 'InlineScript'
+      Inline: |
+        Get-AzResource -ResourceGroupName $(ResourceGroupName) -ResourceType Microsoft.Insights/metricAlerts | ForEach-Object {Remove-AzMetricAlertRuleV2 -ResourceGroupName $_.ResourceGroupName -Name $_.Name }
+      errorActionPreference: 'stop'
+      azurePowerShellVersion: 'LatestVersion'
+      
+      
+    
+    parameters:
+  - name: azureSubscription
+    type: string
+
+
+steps:
+  - task: AzurePowerShell@5
+    displayName: 'Remove alerts from resource group'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      displayName: 'RemoveAlertsFromResourceGroup'
+      ScriptType: 'InlineScript'
+      Inline: |
+        Get-AzResource -ResourceGroupName $(ResourceGroupName) -ResourceType Microsoft.Insights/metricAlerts | ForEach-Object {Remove-AzMetricAlertRuleV2 -ResourceGroupName $_.ResourceGroupName -Name $_.Name }
+      errorActionPreference: 'stop'
+      azurePowerShellVersion: 'LatestVersion'
