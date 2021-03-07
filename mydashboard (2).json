@@ -1,0 +1,1888 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "Overall Vault Avaibilibity\r\nOverall Service API Latency\r\nTotal Service API Hits",
+                    "title": "Key Vault",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "position": {
+              "x": 4,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "Availability",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Overall Vault Availability"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "ServiceApiLatency",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Overall Service Api Latency"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "ServiceApiHit",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Total Service Api Hits"
+                          }
+                        }
+                      ],
+                      "title": "Avg Overall Vault Availability, Avg Overall Service Api Latency, and Count Total Service Api Hits for testkv1232",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "Availability",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Overall Vault Availability"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "ServiceApiLatency",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Overall Service Api Latency"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.KeyVault/vaults/testkv1232"
+                          },
+                          "name": "ServiceApiHit",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.keyvault/vaults",
+                          "metricVisualization": {
+                            "displayName": "Total Service Api Hits"
+                          }
+                        }
+                      ],
+                      "title": "Avg Overall Vault Availability, Avg Overall Service Api Latency, and Count Total Service Api Hits for testkv1232",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "position": {
+              "x": 0,
+              "y": 3,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "AG Total Time\r\nCurrent Connections\r\nFailed Requests\r\nTotal Request\r\nHealthy Host Count\r\nUnhealthy Host Count\r\nRequest Per Healthy Host\r\nResponse Status\r\nThroughput\r\nBackend Response Status",
+                    "title": "Application Gateway",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "position": {
+              "x": 4,
+              "y": 3,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ApplicationGatewayTotalTime",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Application Gateway Total Time"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "CurrentConnections",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Current Connections"
+                          }
+                        }
+                      ],
+                      "title": "Avg Application Gateway Total Time and Sum Current Connections for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ApplicationGatewayTotalTime",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Application Gateway Total Time"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "CurrentConnections",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Current Connections"
+                          }
+                        }
+                      ],
+                      "title": "Avg Application Gateway Total Time and Sum Current Connections for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "4": {
+            "position": {
+              "x": 10,
+              "y": 3,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "FailedRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Failed Requests"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "TotalRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Total Requests"
+                          }
+                        }
+                      ],
+                      "title": "Sum Failed Requests and Sum Total Requests for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "FailedRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Failed Requests"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "TotalRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Total Requests"
+                          }
+                        }
+                      ],
+                      "title": "Sum Failed Requests and Sum Total Requests for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "5": {
+            "position": {
+              "x": 16,
+              "y": 3,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "HealthyHostCount",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Healthy Host Count"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "UnhealthyHostCount",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Unhealthy Host Count"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "AvgRequestCountPerHealthyHost",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Requests per minute per Healthy Host"
+                          }
+                        }
+                      ],
+                      "title": "Avg Healthy Host Count, Avg Unhealthy Host Count, and Avg Requests per minute per Healthy Host for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "HealthyHostCount",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Healthy Host Count"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "UnhealthyHostCount",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Unhealthy Host Count"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "AvgRequestCountPerHealthyHost",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Requests per minute per Healthy Host"
+                          }
+                        }
+                      ],
+                      "title": "Avg Healthy Host Count, Avg Unhealthy Host Count, and Avg Requests per minute per Healthy Host for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "6": {
+            "position": {
+              "x": 22,
+              "y": 3,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Response Status"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "BackendResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Backend Response Status"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Response Status"
+                          }
+                        }
+                      ],
+                      "title": "Sum Response Status, Sum Backend Response Status, and Sum Response Status for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Response Status"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "BackendResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Backend Response Status"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Network/applicationGateways/testappgw45"
+                          },
+                          "name": "ResponseStatus",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.network/applicationgateways",
+                          "metricVisualization": {
+                            "displayName": "Response Status"
+                          }
+                        }
+                      ],
+                      "title": "Sum Response Status, Sum Backend Response Status, and Sum Response Status for testappgw45",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "7": {
+            "position": {
+              "x": 0,
+              "y": 6,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "CPU Percentage\r\nMemory Percentage",
+                    "title": "App Service Plan",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "8": {
+            "position": {
+              "x": 4,
+              "y": 6,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/serverFarms/ASP-AzureDevops-b3bb"
+                          },
+                          "name": "CpuPercentage",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/serverfarms",
+                          "metricVisualization": {
+                            "displayName": "CPU Percentage"
+                          }
+                        }
+                      ],
+                      "title": "Avg CPU Percentage for ASP-AzureDevops-b3bb",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/serverFarms/ASP-AzureDevops-b3bb"
+                          },
+                          "name": "CpuPercentage",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/serverfarms",
+                          "metricVisualization": {
+                            "displayName": "CPU Percentage"
+                          }
+                        }
+                      ],
+                      "title": "Avg CPU Percentage for ASP-AzureDevops-b3bb",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "9": {
+            "position": {
+              "x": 10,
+              "y": 6,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/serverFarms/ASP-AzureDevops-b3bb"
+                          },
+                          "name": "MemoryPercentage",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/serverfarms",
+                          "metricVisualization": {
+                            "displayName": "Memory Percentage"
+                          }
+                        }
+                      ],
+                      "title": "Avg Memory Percentage for ASP-AzureDevops-b3bb",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/serverFarms/ASP-AzureDevops-b3bb"
+                          },
+                          "name": "MemoryPercentage",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/serverfarms",
+                          "metricVisualization": {
+                            "displayName": "Memory Percentage"
+                          }
+                        }
+                      ],
+                      "title": "Avg Memory Percentage for ASP-AzureDevops-b3bb",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "10": {
+            "position": {
+              "x": 0,
+              "y": 9,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "AVG Response Time\r\nAVG Memory Working Set\r\nAVG Thread Count",
+                    "title": "App Service",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "11": {
+            "position": {
+              "x": 4,
+              "y": 9,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "HttpResponseTime",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Response Time"
+                          }
+                        }
+                      ],
+                      "title": "Avg Response Time for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "HttpResponseTime",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Response Time"
+                          }
+                        }
+                      ],
+                      "title": "Avg Response Time for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "12": {
+            "position": {
+              "x": 10,
+              "y": 9,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "MemoryWorkingSet",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Memory working set"
+                          }
+                        }
+                      ],
+                      "title": "Avg Memory working set for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "MemoryWorkingSet",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Memory working set"
+                          }
+                        }
+                      ],
+                      "title": "Avg Memory working set for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "13": {
+            "position": {
+              "x": 16,
+              "y": 9,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "Threads",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Thread Count"
+                          }
+                        }
+                      ],
+                      "title": "Avg Thread Count for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/Microsoft.Web/sites/springbootwebtest"
+                          },
+                          "name": "Threads",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.web/sites",
+                          "metricVisualization": {
+                            "displayName": "Thread Count"
+                          }
+                        }
+                      ],
+                      "title": "Avg Thread Count for springbootwebtest",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "14": {
+            "position": {
+              "x": 0,
+              "y": 12,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "Server Request Count\r\nFailed Request Count",
+                    "title": "Application Insight",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "15": {
+            "position": {
+              "x": 4,
+              "y": 12,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "springbootwebtest",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "springbootwebtest",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "60m"
+                  }
+                }
+              }
+            }
+          },
+          "16": {
+            "position": {
+              "x": 10,
+              "y": 12,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "springbootwebtest",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "springbootwebtest",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/AzureDevops/providers/microsoft.insights/components/springbootwebtest",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "60m"
+                  }
+                }
+              }
+            }
+          },
+          "17": {
+            "position": {
+              "x": 0,
+              "y": 15,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "Total Transactions",
+                    "title": "Storage Account ( Blob )",
+                    "subtitle": "My subtitle",
+                    "markdownSource": 1,
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "18": {
+            "position": {
+              "x": 4,
+              "y": 15,
+              "colSpan": 6,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                },
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/cloud-shell-storage-westeurope/providers/Microsoft.Storage/storageAccounts/csb100320011b713f7b"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        }
+                      ],
+                      "title": "Sum Transactions for csb100320011b713f7b",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b15a92b2-385c-4ff5-84ee-eb443275df1c/resourceGroups/cloud-shell-storage-westeurope/providers/Microsoft.Storage/storageAccounts/csb100320011b713f7b"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        }
+                      ],
+                      "title": "Sum Transactions for csb100320011b713f7b",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "24h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 24 hours"
+              },
+              "filteredPartIds": [
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f81ff",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f85c4",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f853d",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f85fa",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f868b",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f86cf",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f871f",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f880a",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f886a",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f8920",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f89ac",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f8a31",
+                "StartboardPart-MonitorChartPart-4953c203-d6d6-4eff-ad8a-edc41d0f8ac2"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "mydashboard",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "mydashboard"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
